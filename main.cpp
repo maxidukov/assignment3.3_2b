@@ -10,17 +10,6 @@ class Counter {
   public:
   Counter() { value = 1; }
   Counter(int num) { value = num; }
-  void set_counter(){
-    std::string choice = "";
-    std::cout<<"Вы хотите указать начальное значение счётчика? Введите да или нет: ";
-    std::cin>>choice;
-    if(choice == "да"){
-      int num;
-      std::cout<<"Введите начальное значение счётчика: ";
-      std::cin>>num;
-      value = num;
-    }
-  }
   bool work() {
     bool retval = true;
     char command = ' ';
